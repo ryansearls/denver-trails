@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+trail = Trail.create!(trail: "Turkey Trot Trail", location: "Morrison", distance: "3")
+
+trail = Trail.create!(trail: "Chavez and Beaver Brook Trail", location: "Golden", distance: "5")
+

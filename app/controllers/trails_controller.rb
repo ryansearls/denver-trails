@@ -5,5 +5,18 @@ class TrailsController < ApplicationController
     render json: trail.as_json
   end 
   
-  
+  def create
+    trail = Trail.new(
+    trail: params[:trail],
+    location: params[:location],
+    distance: params[:distance],
+  )
+  end 
+
+    # if trail.save
+    #   render json: trail.as_json
+    # else 
+    #   render json:   
+
+
 end

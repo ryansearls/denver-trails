@@ -10,3 +10,4 @@ trail = Trail.create!(trail: "Turkey Trot Trail", location: "Morrison", distance
 
 trail = Trail.create!(trail: "Chavez and Beaver Brook Trail", location: "Golden", distance: "5")
 
+trail = Trail.create!(trail: "Beaver Brook Trail", location: "Golden", distance: "13.4")

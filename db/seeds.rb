@@ -17,3 +17,5 @@ trail = Trail.create!(trail: "Chimney Gulch Trail", location: "Golden", distance
 trail = Trail.create!(trail: "Apex Trail", location: "Golden", distance: "8")
 
 trail = Trail.create!(trail: "Nightbird Gulch and Mount Galbraith Loop ", location: "Golden", distance: "7.5")
+
+trail = Trail.create!(trail: "Windy Saddle Lookout Mountain trail ", location: "Golden", distance: "4.4")

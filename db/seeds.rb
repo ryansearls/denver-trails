@@ -21,3 +21,5 @@ trail = Trail.create!(trail: "Nightbird Gulch and Mount Galbraith Loop ", locati
 trail = Trail.create!(trail: "Windy Saddle Lookout Mountain trail ", location: "Golden", distance: "4.4")
 
 trail = Trail.create!(trail: "Mount Sanitas ", location: "Boulder", distance: "3.2")
+
+trail = Trail.create!(trail: "Green Mountain West Trail ", location: "Boulder", distance: "4.0")

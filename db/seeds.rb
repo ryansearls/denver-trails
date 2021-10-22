@@ -27,3 +27,5 @@ trail = Trail.create!(trail: "Green Mountain West Trail ", location: "Boulder", 
 trail = Trail.create!(trail: "North Table Mountain Loop", location: "Golden", distance: "6.3")
 
 trail = Trail.create!(trail: "South Table Mountain Loop", location: "Golden", distance: "6.3")
+
+trail = Trail.create!(trail: "First and Second Flatirons Loop", location: "Boulder", distance: "2.7")

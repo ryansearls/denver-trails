@@ -2,7 +2,7 @@ class TrailsController < ApplicationController
 
   def index
     trail = Trail.all
-    render json: trail.as_json
+    render json: trail
   end 
   
   def create
@@ -11,12 +11,20 @@ class TrailsController < ApplicationController
     location: params[:location],
     distance: params[:distance],
   )
+  
+    if trail.save
+      render json: trail
+    else 
+      render json: {errors: trail.errors.full_messages} 
+    end 
   end 
 
-    # if trail.save
-    #   render json: trail.as_json
-    # else 
-    #   render json:   
-
+  def show
+    trail_id = params[:id]
+    trail = Trail.find(trail_id)
+    render json: trail
+  end 
+  
+  
 
 end

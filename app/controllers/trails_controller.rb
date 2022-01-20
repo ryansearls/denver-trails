@@ -24,7 +24,26 @@ class TrailsController < ApplicationController
     trail = Trail.find(trail_id)
     render json: trail
   end 
-  
+
+  def update 
+    trail = Trail.find_by(id: params[:id])
+    trail.trail = params[:trail] || trail.name
+    trail.location = params[:location] || trail.location
+    trail.distance = params[:distance] || trail.distance
+    
+    if trail.save
+      render json: trail
+    else 
+      render json: {errors: trail.errors.full_messages} 
+    end 
+  end 
+
+  def destroy
+    trail = Trail.find_by(id: params[:id])
+    trail.destroy
+    render json: {message: "trail is deleted"}
+  end 
+    
   
 
 end

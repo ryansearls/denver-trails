@@ -3,4 +3,14 @@ Rails.application.routes.draw do
 
 get "/trails", controller: "trails", action: "index"
 
+get "/trails/:id" => "trails#show"
+
+post "/trails" => "trails#create"
+
+patch "/trails" => "trails#update"
+
+delete "trails/:id" => "trails#destroy"
+
+
+
 end

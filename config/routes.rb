@@ -7,7 +7,7 @@ get "/trails/:id" => "trails#show"
 
 post "/trails" => "trails#create"
 
-patch "/trails" => "trails#update"
+patch "/trails/:id" => "trails#update"
 
 delete "trails/:id" => "trails#destroy"
 

@@ -43,7 +43,9 @@ class TrailsController < ApplicationController
     trail.destroy
     render json: {message: "trail is deleted"}
   end 
-    
+  
+  
+  
   
 
 end

@@ -11,6 +11,8 @@ patch "/trails/:id" => "trails#update"
 
 delete "trails/:id" => "trails#destroy"
 
+post "/users" => "users#create"
+
 
 
 end

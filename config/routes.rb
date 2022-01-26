@@ -13,6 +13,8 @@ delete "trails/:id" => "trails#destroy"
 
 post "/users" => "users#create"
 
+post "/sessions" => "sessions#create"
+
 
 
 end

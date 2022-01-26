@@ -7,7 +7,7 @@ class TrailsController < ApplicationController
   
   def create
     trail = Trail.new(
-    trail: params[:trail],
+    name: params[:name],
     location: params[:location],
     distance: params[:distance],
   )
@@ -27,7 +27,7 @@ class TrailsController < ApplicationController
 
   def update 
     trail = Trail.find_by(id: params[:id])
-    trail.trail = params[:trail] || trail.name
+    trail.name = params[:name] || trail.name
     trail.location = params[:location] || trail.location
     trail.distance = params[:distance] || trail.distance
     

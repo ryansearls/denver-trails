@@ -10,6 +10,7 @@ class TrailsController < ApplicationController
     name: params[:name],
     location: params[:location],
     distance: params[:distance],
+    # user_id: current_user.id,
   )
   
     if trail.save

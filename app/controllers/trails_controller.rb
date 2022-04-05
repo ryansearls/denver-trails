@@ -11,6 +11,7 @@ class TrailsController < ApplicationController
     name: params[:name],
     location: params[:location],
     distance: params[:distance],
+    image: params[:image],
     # user_id: current_user.id,
   )
   
@@ -32,6 +33,7 @@ class TrailsController < ApplicationController
     trail.name = params[:name] || trail.name
     trail.location = params[:location] || trail.location
     trail.distance = params[:distance] || trail.distance
+    trail.image = params[:image] || trail.image
     
     if trail.save
       render json: trail

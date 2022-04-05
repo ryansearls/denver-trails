@@ -26,6 +26,6 @@ trail = Trail.create!(name: "Green Mountain West Trail ", location: "Boulder", d
 
 trail = Trail.create!(name: "North Table Mountain Loop", location: "Golden", distance: "6.3")
 
-trail = Trail.create!(name: "South Table Mountain Loop", location: "Golden", distance: "6.3")
+trail = Trail.create!(name: "South Table Mountain Loop", location: "Golden", distance: "6.3", image: "")
 
-trail = Trail.create!(name: "First and Second Flatirons Loop", location: "Boulder", distance: "2.7")
+trail = Trail.create!(name: "First and Second Flatirons Loop", location: "Boulder", distance: "2.7", image: "https://dayhikesneardenver.com/wp-content/uploads/2013/08/00-first-flatiron-hike-near-boulder-chautauqua-trail.jpg")

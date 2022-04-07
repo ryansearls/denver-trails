@@ -12,6 +12,7 @@ class TrailsController < ApplicationController
     location: params[:location],
     distance: params[:distance],
     image: params[:image],
+    user_id: current_user.id,
   )
   
     if trail.save
